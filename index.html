@@ -3,7 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <style>
+      .font-outfit {
+        font-family: "Outfit", serif;
+        font-optical-sizing: auto;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="font-outfit bg-slate-800 min-h-screen pt-10">
+    <section class="h-[850px] max-w-md bg-base-200 mx-auto rounded-lg">
+      <header>
+        <img src="assets/bg.png" alt="" class="mx-auto pt-40" />
+        <img src="assets/Group.png" alt="" class="mx-auto mt-[-270px]" />
+      </header>
+      <form class="mt-10">
+        <div class="hero-content">
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="font-bold">Mobile Number</label>
+                <input
+                  type="number"
+                  class="input"
+                  placeholder="Enter your number"
+                  value="01012345678"
+                  required
+                />
+                <label class="font-bold">4 Digit Pin</label>
+                <input
+                  type="number"
+                  class="input"
+                  placeholder="Enter 4 Digit Pin"
+                  value="1234"
+                  required
+                />
+
+                <button class="btn mt-4 btn-neutral bg-blue-700 border-none">
+                  Login
+                </button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
 </html>

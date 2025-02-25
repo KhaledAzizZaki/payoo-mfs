@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo MFS</title>
+    <!-- Daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <style>
+      .font-outfit {
+        font-family: "Outfit", serif;
+        font-optical-sizing: auto;
+      }
+    </style>
+  </head>
+  <body class="font-outfit bg-slate-800 min-h-screen pt-10">
+    <section class="min-h-screen max-w-md bg-base-200 mx-auto rounded-lg">
+      <header class="flex justify-between items-center p-6 border-b">
+        <div class="flex items-center gap-2">
+          <img src="assets/Group.png" alt="" class="w-12" />
+          <div class="">
+            <h5 class="font-bold">$ <span id="balance">45000</span></h5>
+            <p>Available Balance</p>
+          </div>
+        </div>
+        <button class="btn btn-outline btn-info">Log Out</button>
+      </header>
+
+      <main>
+        <div class="p-6">
+          <h4 class="font-bold text-2xl">🔥 Welcome to Payooo!</h4>
+          <p class="p-2">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
+        </div>
+
+        <section class="px-6 grid grid-cols-3 gap-4">
+          <!-- 1 -->
+          <div class="text-center border py-5 rounded-md">
+            <img src="assets/wallet1.png" alt="" class="mx-auto" />
+            <p>Add Money</p>
+          </div>
+          <!-- 2 -->
+          <div class="text-center border py-5 rounded-md">
+            <img src="assets/send1.png" alt="" class="mx-auto" />
+            <p>Cash Out</p>
+          </div>
+          <!-- 3 -->
+          <div class="text-center border py-5 rounded-md">
+            <img src="assets/money1.png" alt="" class="mx-auto" />
+            <p>Transfer Money</p>
+          </div>
+          <!-- 4 -->
+          <div class="text-center border py-5 rounded-md">
+            <img src="assets/bonus1.png" alt="" class="mx-auto" />
+            <p>Get Bonus</p>
+          </div>
+          <!-- 5 -->
+          <div class="text-center border py-5 rounded-md">
+            <img src="assets/purse1.png" alt="" class="mx-auto" />
+            <p>Pay Bill</p>
+          </div>
+          <!-- 6 -->
+          <div class="text-center border py-5 rounded-md">
+            <img src="assets/transaction1.png" alt="" class="mx-auto" />
+            <p>Transactions</p>
+          </div>
+        </section>
+        <!-- 1 Add Money -->
+        <section id="add-money">
+          <form class="mt-10">
+            <h4 class="pl-6 font-bold text-xl">Add Money</h4>
+            <div class="hero-content">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <fieldset class="fieldset">
+                    <label class="font-bold">Select A Bank</label>
+                    <select class="select">
+                      <option disabled selected>Select Bank</option>
+                      <option value="bkash">Bkash</option>
+                      <option value="nagad">Nagad</option>
+                      <option value="bddl">DBBL</option>
+                    </select>
+                    <label class="font-bold">Mobile Number</label>
+                    <input
+                      id="mobile-number"
+                      type="number"
+                      class="input"
+                      placeholder="Enter your number"
+                      value="01012345678"
+                      required
+                    />
+                    <label class="font-bold">Amount to Add</label>
+                    <input
+                      id="amount-add"
+                      type="number"
+                      class="input"
+                      placeholder="Enter 4 Digit Pin"
+                      required
+                    />
+                    <label class="font-bold">4 Digit Pin</label>
+                    <input
+                      id="pin-number"
+                      type="number"
+                      class="input"
+                      placeholder="Enter 4 Digit Pin"
+                      value="1234"
+                      required
+                    />
+
+                    <button
+                      id="btn-add-money"
+                      class="btn mt-4 btn-neutral bg-blue-700 border-none"
+                    >
+                      Add Money
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+        <!-- 2 Cash Out -->
+        <section id="cash-out">
+          <form class="mt-10">
+            <h4 class="pl-6 font-bold text-xl">Cash Out</h4>
+            <div class="hero-content">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <fieldset class="fieldset">
+                    <label class="font-bold">Select A Bank</label>
+                    <select class="select">
+                      <option disabled selected>Select Bank</option>
+                      <option value="bkash">Bkash</option>
+                      <option value="nagad">Nagad</option>
+                      <option value="bddl">DBBL</option>
+                    </select>
+                    <label class="font-bold">Mobile Number</label>
+                    <input
+                      id="mobile-number"
+                      type="number"
+                      class="input"
+                      placeholder="Enter your number"
+                      value="01012345678"
+                      required
+                    />
+                    <label class="font-bold">Amount to Add</label>
+                    <input
+                      id="amount-add"
+                      type="number"
+                      class="input"
+                      placeholder="Enter 4 Digit Pin"
+                      required
+                    />
+                    <label class="font-bold">4 Digit Pin</label>
+                    <input
+                      id="pin-number"
+                      type="number"
+                      class="input"
+                      placeholder="Enter 4 Digit Pin"
+                      value="1234"
+                      required
+                    />
+
+                    <button
+                      id="btn-add-money"
+                      class="btn mt-4 btn-neutral bg-blue-700 border-none"
+                    >
+                      Add Money
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

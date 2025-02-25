@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo MFS</title>
     <!-- Daisy ui -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
@@ -40,6 +41,7 @@
               <fieldset class="fieldset">
                 <label class="font-bold">Mobile Number</label>
                 <input
+                  id="mobile-number"
                   type="number"
                   class="input"
                   placeholder="Enter your number"
@@ -48,6 +50,7 @@
                 />
                 <label class="font-bold">4 Digit Pin</label>
                 <input
+                  id="pin-number"
                   type="number"
                   class="input"
                   placeholder="Enter 4 Digit Pin"
@@ -55,7 +58,10 @@
                   required
                 />
 
-                <button class="btn mt-4 btn-neutral bg-blue-700 border-none">
+                <button
+                  id="btn-login"
+                  class="btn mt-4 btn-neutral bg-blue-700 border-none"
+                >
                   Login
                 </button>
               </fieldset>
@@ -64,5 +70,7 @@
         </div>
       </form>
     </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

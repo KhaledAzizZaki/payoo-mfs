@@ -150,33 +150,26 @@
               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <div class="card-body">
                   <fieldset class="fieldset">
-                    <label class="font-bold">Select A Bank</label>
-                    <select class="select">
-                      <option disabled selected>Select Bank</option>
-                      <option value="bkash">Bkash</option>
-                      <option value="nagad">Nagad</option>
-                      <option value="bddl">DBBL</option>
-                    </select>
-                    <label class="font-bold">Mobile Number</label>
+                    <label class="font-bold">Agent Number</label>
                     <input
-                      id="mobile-number"
+                      id="agent-number"
                       type="number"
                       class="input"
-                      placeholder="Enter your number"
+                      placeholder="Enter Agent number"
                       value="01012345678"
                       required
                     />
-                    <label class="font-bold">Amount to Add</label>
+                    <label class="font-bold">Amount</label>
                     <input
-                      id="amount-add"
+                      id="amount-remove"
                       type="number"
                       class="input"
                       placeholder="Enter 4 Digit Pin"
                       required
                     />
-                    <label class="font-bold">4 Digit Pin</label>
+                    <label class="font-bold">Pin Number</label>
                     <input
-                      id="pin-number"
+                      id="cash-out-pin-number"
                       type="number"
                       class="input"
                       placeholder="Enter 4 Digit Pin"
@@ -185,10 +178,10 @@
                     />
 
                     <button
-                      id="btn-add-money"
+                      id="btn-remove-money"
                       class="btn mt-4 btn-neutral bg-blue-700 border-none"
                     >
-                      Add Money
+                      Withdraw Money
                     </button>
                   </fieldset>
                 </div>
@@ -198,7 +191,9 @@
         </section>
       </main>
     </section>
+    <script src="utility/utility.js"></script>
     <script src="js/main.js"></script>
     <script src="js/togol.js"></script>
+    <script src="js/cashOut.js"></script>
   </body>
 </html>

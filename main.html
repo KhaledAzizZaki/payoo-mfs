@@ -38,7 +38,9 @@
             <p>Available Balance</p>
           </div>
         </div>
-        <button class="btn btn-outline btn-info">Log Out</button>
+        <button id="log-out-btn" class="btn btn-outline btn-info">
+          Log Out
+        </button>
       </header>
 
       <main>
@@ -83,7 +85,10 @@
             <p>Pay Bill</p>
           </div>
           <!-- 6 -->
-          <div class="text-center border py-5 rounded-md cursor-pointer">
+          <div
+            id="transactions-card"
+            class="text-center border py-5 rounded-md cursor-pointer"
+          >
             <img src="assets/transaction1.png" alt="" class="mx-auto" />
             <p>Transactions</p>
           </div>
@@ -97,7 +102,7 @@
                 <div class="card-body">
                   <fieldset class="fieldset">
                     <label class="font-bold">Select A Bank</label>
-                    <select class="select">
+                    <select id="bank" class="select">
                       <option disabled selected>Select Bank</option>
                       <option value="bkash">Bkash</option>
                       <option value="nagad">Nagad</option>
@@ -185,6 +190,17 @@
                     </button>
                   </fieldset>
                 </div>
+              </div>
+            </div>
+          </form>
+        </section>
+        <!-- 3 Transactions -->
+        <section id="transactions">
+          <form class="mt-10">
+            <h4 class="pl-6 font-bold text-xl">Transactions History</h4>
+            <div class="hero-content">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="transaction-history" class="card-body"></div>
               </div>
             </div>
           </form>
